@@ -47,27 +47,6 @@ The Python script `telco_churn_nn_from_scratch.py` performs the following steps:
     *   Calculates and prints the accuracy for each set.
     *   Includes optional code to generate and display a confusion matrix and classification report for the test set using Scikit-learn, providing deeper insights into performance, especially given the potential class imbalance in the churn dataset.
 
-## How to Run
-
-1.  **Prerequisites:** Ensure you have Python installed along with the following libraries:
-    *   NumPy
-    *   Pandas
-    *   Matplotlib
-    *   Scikit-learn (`pip install numpy pandas matplotlib scikit-learn`)
-2.  **Dataset:** Download the `WA_Fn-UseC_-Telco-Customer-Churn.csv` file and place it in the same directory as the Python script, or update the file path in the script.
-3.  **Execution:** Run the Python script:
-    ```bash
-    python telco_churn_nn_from_scratch.py
-    ```
-    The script will output training progress, final accuracies, and display plots for cost and the confusion matrix.
-
-## Libraries Used
-
-*   **NumPy:** For numerical operations and building the neural network core.
-*   **Pandas:** For data loading and manipulation.
-*   **Matplotlib:** For plotting costs and confusion matrices.
-*   **Scikit-learn:** For data splitting (`train_test_split`), scaling (`StandardScaler`), and evaluation metrics (`confusion_matrix`, `classification_report`).
-
 ## Future Work
 
 *   **Handle Class Imbalance:** Implement techniques like SMOTE (Synthetic Minority Over-sampling Technique) or class weighting during training to potentially improve prediction performance for the minority (Churn) class.
